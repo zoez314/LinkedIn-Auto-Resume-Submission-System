@@ -1,4 +1,3 @@
-# LinkedIn-Auto-Resume-Submission-System
 LinkedIn Auto-Resume Submission System - 20 Day Launch Plan
 🎯 Project Goal
 Build an automated LinkedIn job application system that:
