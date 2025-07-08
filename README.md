@@ -84,6 +84,8 @@ linkedin-auto-resume/
 ├── database/         # SQLite storage
 ├── .env.template     # API keys and credentials (safe template)
 └── README.md         # Project documentation
+
+```
 ---
 
 ## 🚀 Getting Started
