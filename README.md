@@ -74,17 +74,15 @@ Build an end-to-end automated LinkedIn job application system that:
 ## 📁 Folder Structure
 
 📁 linkedin-auto-resume/
-├── scraper/        # Job scraping logic
-├── parser/         # Resume text extractor
-├── matcher/        # NLP-based job-resume matcher
-├── generator/      # GPT cover letter generator
-├── ui/             # Streamlit frontend
-├── data/           # Sample jobs/resumes
-├── database/       # SQLite storage
-├── .env.template   # API keys and credentials (safe template)
-└── README.md       # Project documentation
-
-
+├── scraper/       # Job scraping logic
+├── parser/        # Resume text extractor
+├── matcher/       # NLP-based job-resume matcher
+├── generator/     # GPT cover letter generator
+├── ui/            # Streamlit frontend
+├── data/          # Sample jobs/resumes
+├── database/      # SQLite storage
+├── .env.template  # API keys and credentials (safe template)
+└── README.md      # Project documentation
 
 ---
 
