@@ -91,6 +91,17 @@ if st.session_state.generated_letter:
     st.subheader("Generated Cover Letter")
     st.text_area("You can edit below:", st.session_state.generated_letter, height=300)
 
+# 5. Download Cover Letter
+st.header("5. Download Cover Letter")
+
+if st.session_state.generated_letter:
+    # Convert to downloadable file
+    st.download_button(
+        label="💾 Download as .txt",
+        data=st.session_state.generated_letter,
+        file_name="cover_letter.txt",
+        mime="text/plain"
+    )
 
 
 
