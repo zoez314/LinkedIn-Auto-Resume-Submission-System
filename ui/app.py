@@ -103,5 +103,27 @@ if st.session_state.generated_letter:
         mime="text/plain"
     )
 
+from utils.job_tracker import save_job_record, load_applied_jobs
+
+# Save or Apply
+st.header("5. Job Tracker")
+if st.button("💾 Save this Job"):
+    success = save_job_record(selected_job_obj, status="saved")
+    if success:
+        st.success("Job saved to your tracker.")
+    else:
+        st.info("This job is already in your saved list.")
+
+if st.button("✅ Mark as Applied"):
+    success = save_job_record(selected_job_obj, status="applied")
+    if success:
+        st.success("Job marked as applied.")
+    else:
+        st.info("This job is already marked.")
+
+# Display current applied jobs
+st.subheader("📋 Your Applied/Saved Jobs")
+applied_jobs = load_applied_jobs()
+st.table(applied_jobs[-5:])  # Show last 5 records
 
 
